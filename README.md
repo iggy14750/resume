@@ -1,3 +1,3 @@
-##The resume of Isaac Goss
+## The resume of Isaac Goss
 
 What we have, here, is my CV.
