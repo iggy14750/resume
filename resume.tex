@@ -11,7 +11,11 @@
 \providecommand{\tightlist}{
     \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}
 }
-
+\providecommand{\datetable}[2]{
+    \begin{tabular*}{\textwidth}{r @{\extracolsep{\fill}} l}
+        #1 & #2
+    \end{tabular*}
+}
 
 \begin{document}
 
@@ -22,9 +26,9 @@
     
     \subsection*{Education}\label{education}      
       \begin{itemize}\tightlist
-        \item University of Pittsburgh \textbar{} Pittsburgh, PA \textbar{} GPA: 3.24 / 4.0
+        \item \datetable{University of Pittsburgh \textbar{} Pittsburgh, PA \textbar{} GPA: 3.24 / 4.0}{May 2018}
         \begin{itemize}\tightlist
-          \item Bachelor of Science in Computer Engineering (expected May 2018)
+          \item Bachelor of Science in Computer Engineering
           \item Minor in Mathematics
         \end{itemize}
       \end{itemize}
@@ -32,27 +36,37 @@
     \subsection*{Experience}\label{experience}
       \begin{itemize}\tightlist
         
-        \item Center for High-Performance and Re-configurable Computing \textbar{} Pittsburgh, PA \textbar{} May 2017 - Present
+        \item
+        \datetable
+            {Center for High-Performance and Re-configurable Computing \textbar{} Pittsburgh, PA}
+            {May 2017 - Present}
         \begin{itemize}\tightlist
           \item Research Intern
           \item Investigate trade-offs for embedded sensor networks.
           \item Writing on hardware design simulation workflows.
       	\end{itemize}
         
-        \item North American MH Registry \textbar{} Pittsburgh, PA \textbar{} Nov 2015 - May 2016
+        \item
+        \datetable
+            {North American MH Registry \textbar{} Pittsburgh, PA}
+            {Nov 2015 - May 2016}
         \begin{itemize}\tightlist
           \item Intern
           \item Design web-based data collection forms
           \item Assist in transition to new database (Python transformation tools)
         \end{itemize}
 
-        \item University of Pittsburgh \textbar{} Greensburg, PA \textbar{} Dec 2014 - May 2015
+        \item \datetable
+            {University of Pittsburgh \textbar{} Greensburg, PA}
+            {Dec 2014 - May 2015}
         \begin{itemize}\tightlist
           \item Mathematics Tutor
           \item Tutor Calculus 1, 2, 3, and Physics
         \end{itemize}
         
-        \item Shoener Environmental \textbar{} Meyersdale, PA \textbar{} Jun 2014 - Nov 2014
+        \item \datetable 
+            {Shoener Environmental \textbar{} Meyersdale, PA}
+            {Jun 2014 - Nov 2014}
         \begin{itemize}\tightlist
           \item Environmental Technician
           \item Survey wind-turbine site to collect data on natural impact
