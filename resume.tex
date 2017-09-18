@@ -5,6 +5,8 @@
 \usepackage{enumitem}
 \usepackage[letterpaper, total={7in, 10in}]{geometry}
 
+\setlength\parindent{0pt}
+\thispagestyle{empty}
 \titlespacing\subsubsection{0pt}{10pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
 \titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
 \titlespacing\section{0pt}{18pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
@@ -25,112 +27,119 @@
     \hrule
     
     \subsection*{Education}\label{education}      
-      \begin{itemize}\tightlist
-        \item \datetable{University of Pittsburgh \textbar{} Pittsburgh, PA \textbar{} GPA: 3.24 / 4.0}{May 2018}
+        \datetable{
+            \textbf{University of Pittsburgh} \textbar{} 
+            Pittsburgh, PA \textbar{} 
+            GPA: 3.24 / 4.0
+        }{
+            May 2018
+        }
         \begin{itemize}\tightlist
           \item Bachelor of Science in Computer Engineering
           \item Minor in Mathematics
         \end{itemize}
-      \end{itemize}
+        \subsubsection*{Relevant Courses}
+            Software Engineering,
+            Algorithm Design,
+            Compiler Design,
+            Combinatorics
+            Computer Architecture,\\
+            Advanced Digital Design,
+            % Formal Methods in Computer Science,
+            Graph Theory,
+            Algorithm Implementation,
+            System Software
+            % Abstract Algebra
+            % Probability \& Statistics,
+            % Computer Organization,
+            % Linear Algebra,
+            % Analysis and Design of Microelectronics,
+            % Data Structures,
+            % Digital Circuits Lab,
+            % Theoretical Math,
+            % Differential Equations,
+            % Digital Logic,
+            % Linear Circuits
+        
+    
       
     \subsection*{Experience}\label{experience}
-      \begin{itemize}\tightlist
-        
-        \item
-        \datetable
-            {Center for High-Performance and Re-configurable Computing \textbar{} Pittsburgh, PA}
-            {May 2017 - Aug 2017}
+        \datetable{
+            \textbf{University of Pittsburgh} \textbar{} Pittsburgh, PA
+        }{August 2017 - Present}
+        Teaching Assistant: Digital Systems Lab
+    
+        \datetable{
+            \textbf{Center for High-Performance and Re-configurable Computing} \textbar{} Pittsburgh, PA
+        }{May 2017 - Aug 2017}
+        Research Intern
         \begin{itemize}\tightlist
-          \item Research Intern
           \item Investigate trade-offs for embedded sensor networks.
           \item Designed hardware design simulation workflows.
       	\end{itemize}
-        
-        \item
-        \datetable
-            {North American MH Registry \textbar{} Pittsburgh, PA}
-            {Nov 2015 - May 2016}
+      
+        \datetable{
+            \textbf{North American MH Registry} 
+            \textbar{} Pittsburgh, PA
+        }{Nov 2015 - May 2016}
+        Intern/Programmer
         \begin{itemize}\tightlist
-          \item Intern/Programmer
           \item Design web-based data collection forms
           \item Assist in transition to new database (Python transformation tools)
         \end{itemize}
 
-        \item \datetable
-            {University of Pittsburgh \textbar{} Greensburg, PA}
-            {Dec 2014 - May 2015}
+        \datetable{
+            \textbf{University of Pittsburgh} \textbar{} 
+            Greensburg, PA
+        }{Dec 2014 - May 2015}
+        Mathematics Tutor: Calculus 1, 2, 3, and Physics
+      
+  \subsection*{Tools}\label{languages}
+  \begin{description}\tightlist
+      \item[Proficient:] Java,
+      C,
+      Python,
+      VHDL,
+      %HTML \& CSS,
+      Markdown,
+      git,
+      GitHub,
+      Unix,
+      make,
+      regex,
+      \LaTeX,
+      Javadoc,
+      %Catch,
+      FPGA
+      \item[Learning:] C++, 
+      Haskell, 
+      Rust,
+      bash scripting,      
+      JUnit, 
+      Gradle,
+      TravisCI,
+      JFlex,
+      JavaCUP
+  \end{description}
+
+
+    \subsection*{Projects: github.com/iggy14750}\label{projects}
+    %\begin{itemize}\tightlist
+        
+        \datetable{Simulation for Hardware Design}{May 2017 - Aug 2017}
         \begin{itemize}\tightlist
-          \item Mathematics Tutor
-          \item Tutor Calculus 1, 2, 3, and Physics
+            \item Researched and developed techniques for simulating full systems.
+            \item Test-benches written in HDL to drive system, and verify behavior.
+            \item Bus-functional models in place of CPU and software.
         \end{itemize}
         
-%        \item \datetable 
-%            {Shoener Environmental \textbar{} Meyersdale, PA}
-%            {Jun 2014 - Nov 2014}
-%        \begin{itemize}\tightlist
-%          \item Environmental Technician
-%          \item Survey wind-turbine site to collect data on natural impact
-%        \end{itemize}
-
-      \end{itemize} % subsection Expirience
-      
-  \subsection*{Languages}\label{languages}
-  Java,
-  C,
-  Python,
-  VHDL,
-  HTML \& CSS,
-  Markdown\\
-  Learning: C++, Haskell, Rust
-  
-  \subsection*{Tools}\label{tools}
-  git,
-  Unix,
-  make,
-  regex,
-  \LaTeX,
-  Javadoc,
-  Catch,
-  FPGA
-  
-  \subsection*{Relevant Courses}\label{relevant-courses}
-      Computer Architecture,
-      Advanced Digital Design,
-      Formal Methods in Computer Science,
-      Graph Theory,
-      Algorithm Implementation,
-      System Software,
-      Abstract Algebra
-%      Probability \& Statistics,
-%      Computer Organization,
-%      Linear Algebra,
-%      Analysis and Design of Microelectronics,
-%      Data Structures,
-%      Digital Circuits Lab,
-%      Theoretical Math,
-%      Differential Equations,
-%      Digital Logic,
-%      Linear Circuits
-    
-
-  \subsection*{Projects (View them at github.com/iggy14750)}\label{projects}
-    \begin{itemize}\tightlist
-        
-      \item \datetable{Simulation for Hardware Design}{May 2017 - Aug 2017}
-      \begin{itemize}\tightlist
-        \item Researched and developed techniques for simulating full systems.
-        \item Test-benches written in HDL to drive system, and verify behavior.
-        \item Bus-functional models in place of CPU and software.
-      \end{itemize}
-        
-      \item \datetable{Nonstandard Template Library}{May 2017 - Present}
+      \datetable{Nonstandard Template Library}{May 2017 - Present}
       \begin{itemize}\tightlist
         \item Implementation of some data structures and algorithms in C++
         \item Goals are to learn C++, TDD, and review those DS and algos.
-        \item Name is a play on Standard Template Library, part of C++ std.
       \end{itemize}
           
-      \item \datetable{MIPS CPU}{Jan 2017 - April 2017}
+      \datetable{MIPS CPU}{Jan 2017 - April 2017}
       \begin{itemize}\tightlist
         \item 5-Stage Harvard pipeline, with full forwarding, and hazard detection.
         \item Constructed from stratch, only using VHDL primitives.
@@ -142,23 +151,23 @@
 %        \item Several assignments in Graph Theory, written up in \LaTeX.
 %      \end{itemize}
       
-      \item \datetable{Algorithm Projects}{Aug 2016 - Dec 2016}
-        \begin{itemize}\tightlist
-          \item Several small applications which exercise algorithmic concepts.
-          \item Such as using priority queues to organize apt listings.
-        \end{itemize}
+      \datetable{Algorithm Projects}{Aug 2016 - Dec 2016}
+      \begin{itemize}\tightlist
+        \item Several small applications which exercise algorithmic concepts.
+        \item Such as using priority queues to organize apt listings.
+      \end{itemize}
         
-      \item \datetable{Instalight}{Jan 2016}
+      \datetable{Instalight}{Jan 2016}
       \begin{itemize}\tightlist
         \item Hackathon project which displayed arbitrary strings as Morse code.
         \item Worked on Twitter scraper, sent tweet to be displayed.
       \end{itemize}
       
-      \item \datetable{The Mathematics of the RSA Cipher}{Dec 2015}
+      \datetable{The Mathematics of the RSA Cipher}{Dec 2015}
       \begin{itemize}\tightlist
         \item Describes the motivation and mathematical basis of the RSA cypher.
         \item Includes a proof of Euler's Theorem (of modular exponents).
       \end{itemize}
-  \end{itemize}
+  %\end{itemize}
     
 \end{document}
