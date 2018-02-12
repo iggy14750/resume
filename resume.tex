@@ -5,12 +5,19 @@
 \usepackage{enumitem}
 \usepackage[letterpaper, total={7in, 10in}]{geometry}
 
+\setlength\parindent{0pt}
+\thispagestyle{empty}
+\titlespacing\subsubsection{0pt}{10pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
 \titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
-\titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\section{0pt}{18pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
 \providecommand{\tightlist}{
     \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}
 }
-
+\providecommand{\datetable}[2]{
+    \begin{tabular*}{\textwidth}{@{}r @{\extracolsep{\fill}} l}
+        #1 & #2
+    \end{tabular*}
+}
 
 \begin{document}
 
@@ -20,106 +27,159 @@
     \hrule
     
     \subsection*{Education}\label{education}      
-      \begin{itemize}\tightlist
-        \item University of Pittsburgh \textbar{} Pittsburgh, PA \textbar{} GPA: 3.24 / 4.0
-        \begin{itemize}\tightlist
-          \item Bachelor of Science in Computer Engineering (expected May 2018)
+        \begin{itemize}[label={}]
+        \item \datetable{
+            \textbf{University of Pittsburgh} \textbar{} 
+            Pittsburgh, PA \textbar{} 
+            GPA: 3.24 / 4.0
+        }{
+            May 2018
+        }
+        \begin{itemize}[ topsep=0pt]\tightlist
+          \item Bachelor of Science in Computer Engineering
           \item Minor in Mathematics
         \end{itemize}
-      \end{itemize}
+        \item \textbf{Relevant Courses}
+            \begin{itemize}[label={}, topsep=0pt]
+                \item
+                Software Engineering,
+                Algorithm Design,
+                Compiler Design,
+                Combinatorics
+                Computer Architecture,\\
+                Advanced Digital Design,
+                % Formal Methods in Computer Science,
+                Graph Theory,
+                Algorithm Implementation,
+                System Software
+                % Abstract Algebra
+                % Probability \& Statistics,
+                % Computer Organization,
+                % Linear Algebra,
+                % Analysis and Design of Microelectronics,
+                % Data Structures,
+                % Digital Circuits Lab,
+                % Theoretical Math,
+                % Differential Equations,
+                % Digital Logic,
+                % Linear Circuits
+            \end{itemize}
+        \end{itemize}
+    
       
     \subsection*{Experience}\label{experience}
-      \begin{itemize}\tightlist
-        
-        \item Center for High-Performance and Re-configurable Computing \textbar{} Pittsburgh, PA \textbar{} May 2017 - Present
-        \begin{itemize}\tightlist
+        \begin{itemize}[label={}]
+        \item \datetable{
+            \textbf{University of Pittsburgh} \textbar{} Pittsburgh, PA
+        }{Aug 2017 - Present}
+        \begin{itemize}[topsep=0pt]
+            \item Teaching Assistant: Digital Systems Lab
+        \end{itemize}
+    
+        \item \datetable{
+            \textbf{Center for High-Performance and Re-configurable Computing} \textbar{} Pittsburgh, PA
+        }{May 2017 - Aug 2017}
+        \begin{itemize}[topsep=0pt]\tightlist
           \item Research Intern
           \item Investigate trade-offs for embedded sensor networks.
-          \item Writing on hardware design simulation workflows.
+          \item Designed hardware design simulation workflows.
       	\end{itemize}
-        
-        \item North American MH Registry \textbar{} Pittsburgh, PA \textbar{} Nov 2015 - May 2016
-        \begin{itemize}\tightlist
-          \item Intern / Programmer
+      
+        \item \datetable{
+            \textbf{North American MH Registry} 
+            \textbar{} Pittsburgh, PA
+        }{Nov 2015 - May 2016}
+        \begin{itemize}[topsep=0pt]\tightlist
+          \item Intern/Programmer
           \item Design web-based data collection forms
           \item Assist in transition to new database (Python transformation tools)
         \end{itemize}
 
-        \item University of Pittsburgh \textbar{} Greensburg, PA \textbar{} Dec 2014 - May 2015
+        \item \datetable{
+            \textbf{University of Pittsburgh} \textbar{} 
+            Greensburg, PA
+        }{Dec 2014 - May 2015}
+        \begin{itemize}[topsep=0pt]
+            \item Mathematics Tutor: Calculus 1, 2, 3, and Physics
+        \end{itemize}
+        \end{itemize}
+      
+  \subsection*{Tools}\label{languages}
+  \begin{description}\tightlist
+      \item[Proficient:] Java,
+      C,
+      Python,
+      VHDL,
+      %HTML \& CSS,
+      Markdown,
+      git,
+      GitHub,
+      Unix,
+      make,
+      regex,
+      \LaTeX,
+      Javadoc,
+      %Catch,
+      FPGA
+      \item[Learning:] C++, 
+      Haskell, 
+      Rust,
+      bash scripting,      
+      JUnit, 
+      Gradle,
+      TravisCI,
+      JFlex,
+      JavaCUP
+  \end{description}
+
+
+    \subsection*{Projects: github.com/iggy14750}\label{projects}
+    \begin{itemize}[label={}]\tightlist
+        
+        \item \datetable{\textbf{Simulation for Hardware Design}}
+        {May 2017 - Aug 2017}
         \begin{itemize}\tightlist
-          \item Mathematics Tutor
-          \item Tutor Calculus 1, 2, 3, and Physics
+            \item Researched and developed techniques for simulating full systems.
+            \item Test-benches written in HDL to drive system, and verify behavior.
+            \item Bus-functional models in place of CPU and software.
         \end{itemize}
         
-        \item Shoener Environmental \textbar{} Meyersdale, PA \textbar{} Jun 2014 - Nov 2014
-        \begin{itemize}\tightlist
-          \item Environmental Technician
-          \item Survey wind-turbine site to collect data on natural impact
-        \end{itemize}
-
-      \end{itemize} % subsection Expirience
-
-  \begin{multicols}{2}
-    
-    \subsection*{Relevant Courses}\label{relevant-courses}
-      \begin{itemize}
-        \item Computer Architecture
-        \item Advanced Digital Design
-        \item Formal Methods in Computer Science
-        \item Graph Theory
-        \item Algorithm Implementation
-        \item System Software
-        \item Abstract Algebra
-        \item Probability \& Statistics
-        \item Computer Organization
-        \item Linear Algebra
-        \item Analysis and Design of Microelectronics
-        \item Data Structures
-        \item Digital Circuits Lab
-        \item Theoretical Math
-        \item Differential Equations
-        \item Digital Logic
-        \item Linear Circuits
-        \item Calculus 1, 2, and 3
-      \end{itemize} 
-    
-  \vfill
-  \columnbreak
-    
-    \subsection*{Skills}\label{skills}
+      \item \datetable{\textbf{Nonstandard Template Library}}
+      {May 2017 - Present}
       \begin{itemize}\tightlist
+        \item Implementation of some data structures and algorithms in C++
+        \item Goals are to learn C++, TDD, and review those DS and algos.
+      \end{itemize}
+          
+      \item \datetable{\textbf{MIPS CPU}}{Jan 2017 - April 2017}
+      \begin{itemize}\tightlist
+        \item 5-Stage Harvard pipeline, with full forwarding, and hazard detection.
+        \item Constructed from stratch, only using VHDL primitives.
+        \item Built with HDL Designer; simulated using ModelSim.
+      \end{itemize}
+      
+%      \item \datetable{Graph Theory}{Jan 2017 - Apr 2017}
+%      \begin{itemize}\tightlist
+%        \item Several assignments in Graph Theory, written up in \LaTeX.
+%      \end{itemize}
+      
+      \item \datetable{\textbf{Algorithm Projects}}{Aug 2016 - Dec 2016}
+      \begin{itemize}\tightlist
+        \item Several small applications which exercise algorithmic concepts.
+        \item Such as using priority queues to organize apt listings.
+      \end{itemize}
         
-        \item Communication
-        \begin{itemize}\tightlist
-          \item Years of on-stage musical performance
-          \item Tireless work in helping other students understand in tutoring.
-        \end{itemize}
-        
-        \item Problem Solving
-        \begin{itemize}\tightlist
-          \item Passionate in thoroughly understanding and solving problems
-        \end{itemize}
-
-        \item Software Engineering
-        \begin{itemize}\tightlist
-          \item Tools: git, Unix, make, regex, \LaTeX
-          \item Languages: Java, Python, C, MIPS, Haskell (learning)
-        \end{itemize}
-
-        \item Theory / Math
-        \begin{itemize}\tightlist
-          \item CS: Familiar with the use of key data structures and algorithms, asymptotic complexity, automata, and proof techniques.
-          \item Math: Calculus, Linear Algebra, DiffEq, Group Theory, Graph Theory
-        \end{itemize}
-
-        \item Electrical Engineering
-        \begin{itemize}\tightlist
-          \item Designed and simulated pipelined MIPS CPU.
-          \item Comfortable with VHDL.
-        \end{itemize}
-
-      \end{itemize} % subsection Skills
-
-  \end{multicols}
-
+      \item \datetable{\textbf{Instalight}}{Jan 2016}
+      \begin{itemize}\tightlist
+        \item Hackathon project which displayed arbitrary strings as Morse code.
+        \item Worked on Twitter scraper, sent tweet to be displayed.
+      \end{itemize}
+      
+      \item \datetable{\textbf{The Mathematics of the RSA Cipher}}{Dec 2015}
+      \begin{itemize}\tightlist
+        \item Describes the motivation and mathematical basis of the RSA cypher.
+        \item Includes a proof of Euler's Theorem (of modular exponents).
+      \end{itemize}
+  \end{itemize}
+    
 \end{document}
