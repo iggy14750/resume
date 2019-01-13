@@ -21,23 +21,54 @@
 
 \begin{document}
 
-  \section*{Isaac B Goss}\label{isaac-b-goss}
-    ibg4@pitt.edu \textbar{} (412) 478 - 3219 \textbar{} Pittsburgh, PA \textbar{} isaacgoss.com
+    \section*{Isaac B Goss}\label{isaac-b-goss}
+    isaac14750@gmail.com \textbar{} (412) 478-3219 \textbar{} Pittsburgh, PA \textbar{} isaacgoss.com
     
     \hrule
-    
-    \subsection*{Education}\label{education}
-        \begin{itemize}[label={}]
+
+    \subsection*{Experience}\label{experience}
+    \begin{itemize}[label={}]
+
         \item \datetable{
-            \textbf{University of Pittsburgh} \textbar{} 
-            Pittsburgh, PA \textbar{} 
-            GPA: 3.24 / 4.0
-        }{
-            May 2018
-        }
+            \textbf{Concurrent EDA, LLC} \textbar{} Pittsburgh, PA
+        }{May 2018 - Present}
+        \begin{itemize}[topsep=0pt]\tightlist
+            \item Software and FPGA Engineer
+            \item Designed, imlemented, tested, and configured software and FPGA projects
+            \item Contributed to internal High-Level Synthesis tools
+            \item Assisted in implementing OpenVX functions on FPGA hardware
+            \item Supported Secure Boot, ECC, and 4-port Ethernet on custom client board
+        \end{itemize}
+
+        \item \datetable{
+            \textbf{University of Pittsburgh} \textbar{} Pittsburgh, PA
+        }{Aug 2017 - May 2018}
+        \begin{itemize}[topsep=0pt]\tightlist
+            \item Teaching Assistant: Digital Systems Lab \& Advanced Digital Design
+            \item Assited in understanding and debugging student projects
+            \item Graded student projecst, papers, and exams
+        \end{itemize}
+
+        \item \datetable{
+            \textbf{Center for High-Performance and Re-configurable Computing} \textbar{} Pittsburgh, PA
+        }{May 2017 - Aug 2017}
+        \begin{itemize}[topsep=0pt]\tightlist
+            \item Research Intern
+            \item Investigated trade-offs for embedded sensor networks
+            \item Designed Bus-Functional Models for FPGA simulation
+      	\end{itemize}
+
+    \end{itemize}
+
+    \subsection*{Education}\label{education}
+    \begin{itemize}[label={}]
+
+        \item \datetable{
+            \textbf{University of Pittsburgh} \textbar{} Pittsburgh, PA \textbar{} GPA: 3.24 / 4.0
+        }{May 2018}
         \begin{itemize}[ topsep=0pt]\tightlist
-          \item Bachelor of Science in Computer Engineering
-          \item Minor in Mathematics
+            \item Bachelor of Science in Computer Engineering
+            \item Minor in Mathematics
         \end{itemize}
         \item \textbf{Relevant Courses}
             \begin{itemize}[label={}, topsep=0pt]
@@ -51,159 +82,67 @@
                 Combinatorics,
                 Computer Architecture,
                 Advanced Digital Design,
-                % Formal Methods in Computer Science,
                 Graph Theory,
                 Algorithm Implementation,
                 System Software
-                % Abstract Algebra
-                % Probability \& Statistics,
-                % Computer Organization,
-                % Linear Algebra,
-                % Analysis and Design of Microelectronics,
-                % Data Structures,
-                % Digital Circuits Lab,
-                % Theoretical Math,
-                % Differential Equations,
-                % Digital Logic,
-                % Linear Circuits
             \end{itemize}
         \end{itemize}
     
-      
-    \subsection*{Experience}\label{experience}
-        \begin{itemize}[label={}]
-        \item \datetable{
-            \textbf{University of Pittsburgh} \textbar{} Pittsburgh, PA
-        }{Aug 2017 - Present}
-        \begin{itemize}[topsep=0pt]
-            \item Teaching Assistant: Digital Systems Lab \& Advanced Digital Design
-        \end{itemize}
-    
-        \item \datetable{
-            \textbf{Center for High-Performance and Re-configurable Computing} \textbar{} Pittsburgh, PA
-        }{May 2017 - Aug 2017}
-        \begin{itemize}[topsep=0pt]\tightlist
-          \item Research Intern
-          \item Investigate trade-offs for embedded sensor networks.
-          \item Designed hardware design simulation workflows.
-      	\end{itemize}
-      
-        \item \datetable{
-            \textbf{North American MH Registry} 
-            \textbar{} Pittsburgh, PA
-        }{Nov 2015 - May 2016}
-        \begin{itemize}[topsep=0pt]\tightlist
-          \item Intern/Programmer
-          \item Design web-based data collection forms
-          \item Assist in transition to new database (Python transformation tools)
-        \end{itemize}
-
-        \item \datetable{
-            \textbf{University of Pittsburgh} \textbar{} 
-            Greensburg, PA
-        }{Dec 2014 - May 2015}
-        \begin{itemize}[topsep=0pt]
-            \item Mathematics Tutor: Calculus 1, 2, 3, and Physics
-        \end{itemize}
-        \end{itemize}
-      
     \subsection*{Tools}\label{languages}
     \begin{description}\tightlist
         \item[Proficient:] Java,
         C,
         Python,
-        % HTML \& CSS,
-        % Markdown,
         git,
-        GitHub,
-        Unix/Linux,
+        VHDL,
+        Bash scripting,
+        Linux,
+        Xilinx FPGAs,
+        Embedded ARM,
         make,
         regex,
         \LaTeX,
         Javadoc,
-        % Catch,
-        Gradle,
         TravisCI,
-        JUnit,
-        Embedded ARM,
-        VHDL,
-        FPGA
+        JUnit
         \item[Learning:] C++,
-        % Haskell,
         Rust,
-        % OpenCV,
+        Go,
+        CMake,
         Machine Learning,
-        Flask,
-        AWS,
-        Bash Scripting
-        % JFlex,
-        % JavaCUP
+        Computer Vision,
+        Ethernet,
+        Digital Signal Processing
     \end{description}
 
-
-    \subsection*{Projects: github.com/iggy14750}\label{projects}
+    \subsection*{Projects}\label{projects}
     \begin{itemize}[label={}]\tightlist
-        
+
         \item \datetable{\textbf{ParkPal}}
         {Jan 2018 - April 2018}
         \begin{itemize}\tightlist
-            \item System to display currently open parallel parking spaces.
-            \item Embedded platform with camera and WiFi modules watching street.
-            \item Server accepts new images, uses computer vision to find open spaces.
+            \item System to observe and display currently open parallel parking spaces
+            \item Embedded camera installed above street; sends images over WiFi
+            \item Server accepts new images; uses computer vision to find open spaces
+            \item Available spaces are displayed to user in Web interface
         \end{itemize}
 
         \item \datetable{\textbf{Training Montage}}
         {Aug 2017 - Dec 2017}
         \begin{itemize}\tightlist
-            \item Application simulated a train control system.
-            \item Modules of model (Train, Track) and control (Train, Track, Central) code.
-            \item 5-person team, managed with Agile techniques, still produced IEEE documentation.
+            \item Train control system and simulator application
+            \item Track system and train physics are modeled in simulation
+            \item Centralized and local controller logic emulate a deliverable system
+            \item 5-person agile team, using continuous integration, IEEE documentation
         \end{itemize}
-
-        \item \datetable{\textbf{Simulation for Hardware Design}}
-        {May 2017 - Aug 2017}
-        \begin{itemize}\tightlist
-            \item Researched and developed techniques for simulating full systems.
-            \item Test-benches written in HDL to drive system, and verify behavior.
-            \item Bus-functional models in place of CPU and software.
-        \end{itemize}
-        
-        % \item \datetable{\textbf{Nonstandard Template Library}}
-        % {May 2017 - Present}
-        % \begin{itemize}\tightlist
-        %     \item Implementation of some data structures and algorithms in C++
-        %     \item Goals are to learn C++, TDD, and review those DS and algos.
-        % \end{itemize}
             
         \item \datetable{\textbf{MIPS CPU}}{Jan 2017 - April 2017}
         \begin{itemize}\tightlist
-            \item 5-Stage Harvard pipeline, with full forwarding, and hazard detection.
-            \item Constructed from stratch, only using VHDL primitives.
-            \item Built with HDL Designer; simulated using ModelSim.
+            \item 5-Stage Harvard pipeline, with full forwarding, and hazard detection
+            \item Constructed from stratch, only using VHDL primitives
+            \item Built with HDL Designer; simulated using ModelSim
         \end{itemize}
-      
-        % \item \datetable{Graph Theory}{Jan 2017 - Apr 2017}
-        % \begin{itemize}\tightlist
-        %     \item Several assignments in Graph Theory, written up in \LaTeX.
-        % \end{itemize}
-      
-        % \item \datetable{\textbf{Algorithm Projects}}{Aug 2016 - Dec 2016}
-        % \begin{itemize}\tightlist
-        %     \item Several small applications which exercise algorithmic concepts.
-        %     \item Such as using priority queues to organize apt listings.
-        % \end{itemize}
-            
-        \item \datetable{\textbf{Instalight}}{Jan 2016}
-        \begin{itemize}\tightlist
-            \item Hackathon project which displayed arbitrary strings as Morse code.
-            \item Worked on Twitter scraper, sent tweet to be displayed.
-        \end{itemize}
-        
-        % \item \datetable{\textbf{The Mathematics of the RSA Cipher}}{Dec 2015}
-        % \begin{itemize}\tightlist
-        %     \item Describes the motivation and mathematical basis of the RSA cypher.
-        %     \item Includes a proof of Euler's Theorem (of modular exponents).
-        % \end{itemize}
-  \end{itemize}
-    
+
+    \end{itemize}
+
 \end{document}
