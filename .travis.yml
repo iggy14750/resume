@@ -1,3 +1,6 @@
+branches:
+  only:
+  - master
 before_install:
   - sudo apt-get update
   - sudo apt-get install texlive-latex-extra
@@ -5,5 +8,4 @@ before_install:
 script:
   - pdflatex resume.tex
 after_success:
-  - export SSHPASS=$PITT_PW
-  - sshpass -e scp -o StrictHostKeyChecking=no resume.pdf "$PITT_USER@unixs.cssd.pitt.edu:public/html"
+  - curl -T resume.pdf --user "$PAIR_USER:$PAIR_PW" 'ftp://johnlradford.pairserver.com/'
