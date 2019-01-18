@@ -1,5 +1,6 @@
 branches:
   only:
+  - travis
   - master
 before_install:
   - sudo apt-get update
@@ -8,4 +9,4 @@ before_install:
 script:
   - pdflatex resume.tex
 after_success:
-  - curl -T resume.pdf --user "$PAIR_USER:$PAIR_PW" 'ftp://johnlradford.pairserver.com/'
+  - curl -T resume.pdf --user "johnlradford_iggaboo:$PAIR_PW" 'ftp://johnlradford.pairserver.com/'
