@@ -5,7 +5,6 @@ branches:
 before_install:
   - sudo apt-get update
   - sudo apt-get install texlive-latex-extra
-  - sudo apt-get install sshpass
 script:
   - pdflatex resume.tex
-  - curl -T resume.pdf --user "johnlradford_iggaboo:$PAIR_PW" 'ftp://johnlradford.pairserver.com/'
+  - curl -T resume.pdf --user "$SERVER_USER:$SERVER_PW" "$SERVER_URL"
