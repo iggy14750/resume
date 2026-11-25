@@ -1,4 +1,4 @@
-\documentclass[18pt]{article}
+\documentclass[20pt]{article}
 %\usepackage[singlespacing]{setspace}
 \usepackage{titlesec}
 \usepackage{multicol}
@@ -6,10 +6,10 @@
 \usepackage[letterpaper, total={7in, 10in}]{geometry}
 
 \setlength\parindent{0pt}
-\thispagestyle{empty}
-\titlespacing\subsubsection{0pt}{10pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
-\titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
-\titlespacing\section{0pt}{18pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+%\thispagestyle{empty}
+\titlespacing\subsubsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsection{0pt}{16pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\section{0pt}{20pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
 \providecommand{\tightlist}{
     \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}
 }
@@ -44,13 +44,16 @@
         }{May 2024 - July 2025}
         \begin{itemize}[topsep=0pt]\tightlist
             \item \textbf{FPGA Engineer}
-            \item Designed, implemented, tested, and debuged Verilog/SystemVerilog code used on Xilinx Versal FPGA platforms
-            \item Supported high-speed (100s Gbps) Ethernet (eg, 400GAUI-8) and OTN (eg, OTL 4.2) traffic on networking equipment
+            % What did I actually BUILD HERE?
+            \item Designed, implemented, tested, and debuged Verilog/SystemVerilog code used on AMD/Xilinx Versal FPGA platforms
+            \item Supported high-speed (100s Gbps) Ethernet (eg, 400GAUI-8) and OTN (eg, OTL 4.2) traffic on in-house networking equipment
+            \item Integrated off-the-shelf IP as well as in-house RTL to create FPGA bitstreams
+            %\item Documented, communicated, and ensured system compatibility with electrical, software, and mechanical engineers.
+            %\item Tested and debuged in-house equipment using commercial test equipment as well as internal logic analyzers.
+            \item Created a minimal Versal template design for use in future products
+            \item Investigate, test, report, and fix issues identified by customers
 
             % Design, implement, test, and debug Verilog and SystemVerilog code used on Xilinx Versal FPGA platforms.
-            %• Integrate off-the-shelf IP as well as in-house RTL to create FPGA bitstreams.
-            %• Document, communicate, and ensure system compatibility with electrical, software, and mechanical engineers.
-            %• Test and debug in-house equipment using commercial test equipment as well as internal logic analyzers.
             %• Report status and technical details to management as well as clients.
         \end{itemize}
 
@@ -91,12 +94,13 @@
         }{May 2018 - Dec 2022}
         \begin{itemize}[topsep=0pt]\tightlist
             \item \textbf{Software and FPGA Engineer}
-            \item Implemented 1,000 frame-per-second video capture system
-            \item Developed bare-metal firmware for DMA and Ethernet hardware
+            \item Designed, implemented, tested, documented, and integrated primarily Xilinx-based, cusstom FPGA solutions 
+            \item Assisted in initial creation of GigaSens (TM) 1,000 frame-per-second video capture HDK (hardware development kit)
             %\item Modified Ethernet driver to support 4-port client board
             \item Maintained embedded Linux systems and applications on smart camera hardware
-            \item Assisted integrating FPGAs onto custom client circuit boards
-            \item Implemented OpenVX image processing functions on FPGA hardware
+            %\item Assisted integrating FPGAs onto custom client circuit boards
+            \item Created custom MIPI-to-Ethernet FPGA design for use in medical radiation chamber
+            \item Implemented high-throughput video processing functions on FPGA hardware, integrating them into digital camera systems
             % Synthesize requirements and client needs into system, IP, and software design
             % Read vendor documentation, including datasheets, hardware schematics,
                 % and standards documents to best understand how to accomplish engineering goals
@@ -113,29 +117,24 @@
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         % College
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Uncomment "iftrue" (while commenting "iffalse") to ENABLE these to be shown.
-\iftrue
-% ...or uncomment "iffalse" (while commenting "iftrue") to DISABLE them.
-%\iffalse
-        \item \datetable{
-            \textbf{University of Pittsburgh} \textbar{} Pittsburgh, PA
-        }{Aug 2017 - May 2018}
-        \begin{itemize}[topsep=0pt]\tightlist
-            \item \textbf{Teaching Assistant}: Digital Systems Lab \& Advanced Digital Design
-            \item Helped students understand and debug projects
-            \item Graded student projects, papers, and exams
-            \item Assisted with students' use of lab equipment, including bench power supplies, oscilloscopes, function generators, and logic analyzers
-        \end{itemize}
+        % \item \datetable{
+        %     \textbf{University of Pittsburgh} \textbar{} Pittsburgh, PA
+        % }{Aug 2017 - May 2018}
+        % \begin{itemize}[topsep=0pt]\tightlist
+        %     \item \textbf{Teaching Assistant}: Digital Systems Lab \& Advanced Digital Design
+        %     \item Helped students understand and debug projects
+        %     \item Graded student projects, papers, and exams
+        %     \item Assisted with students' use of lab equipment, including bench power supplies, oscilloscopes, function generators, and logic analyzers
+        % \end{itemize}
 
-        \item \datetable{
-            \textbf{Center for High-Performance and Re-configurable Computing} \textbar{} Pittsburgh, PA
-        }{May 2017 - Aug 2017}
-        \begin{itemize}[topsep=0pt]\tightlist
-            \item \textbf{Research Intern}
-            \item Investigated trade-offs for embedded sensor networks
-            \item Designed Bus-Functional Models for FPGA simulation
-        \end{itemize}
-\fi
+        % \item \datetable{
+        %     \textbf{Center for High-Performance and Re-configurable Computing} \textbar{} Pittsburgh, PA
+        % }{May 2017 - Aug 2017}
+        % \begin{itemize}[topsep=0pt]\tightlist
+        %     \item \textbf{Research Intern}
+        %     \item Investigated trade-offs for embedded sensor networks
+        %     \item Designed Bus-Functional Models for FPGA simulation
+        % \end{itemize}
 
     \end{itemize}
 
